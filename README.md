@@ -5,3 +5,7 @@ This project is a simple web app that allows to generate styled text for Discord
 + React.js
 + MantineUI
 + Tailwind CSS
+
+## Demo:
+
+
