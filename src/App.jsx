@@ -50,20 +50,22 @@ function App() {
         <p className='w-full text-4xl flex gap-2 justify-center mb-10 mt-5 text-white'>Discord <p style={{ color: '#6157f7' }}>Coloured</p> Text Generator</p>
       </Title>
       <div className='w-full flex justify-center mb-10'>
-        <Text align="center" mt="sm" style = {{ width: "25rem", display: "flex",flexDirection:"column", justifyContent: "center", color: "white"}}>
-          <strong className='m-auto'>About</strong>
-          <br />
+        <Text align="center" mt="sm" style={{ width: "30rem", display: "flex", flexDirection: "column", justifyContent: "center", color: "white" }}>
+          <strong className='m-auto mb-2'>About</strong>
           This is a simple app that creates colored Discord messages using the ANSI color codes available on the latest Discord desktop versions.
           <br />
           To use this, write your text, select parts of it and assign colors to them, then copy it using the button below, and send in a Discord message.
+          <br />
+          <br />
+          <p>Source Code is available on my <a style={{ color: "#5374f5", textDecoration: "underline" }} href='https://github.com/Adarsh-Kumar001/Discord-Colored-Text-VideoDubberSubmission'>Github</a></p>
         </Text>
       </div>
-      <Card align='center' shadow="sm" padding="lg" radius="md" mt="lg" bg="dark.8" style={{color:"white"}}>
+      <Card align='center' shadow="sm" padding="lg" radius="md" mt="lg" bg="dark.8" style={{ color: "white" }}>
         <div className='flex flex-col gap-2'>
-          <Group grow style={{ width: "100%", display: "flex", justifyContent: "center", gap: "20px", marginBottom:"9px"}}>
+          <Group grow style={{ width: "100%", display: "flex", justifyContent: "center", gap: "20px", marginBottom: "9px" }}>
             <Button style={{ backgroundColor: "#808080", padding: "6px", borderRadius: "7px" }} onClick={resetText} color="gray" className='hover:cursor-pointer'>Reset All</Button>
-            <Button style={{ backgroundColor: "#808080", padding: "6px", borderRadius: "7px", fontWeight:"700" }} onClick={() => setIsBold((prev) => !prev)} color={isBold ? "blue" : "gray"} className='hover:cursor-pointer'>Bold</Button>
-            <Button style={{ backgroundColor: "#808080", padding: "6px", borderRadius: "7px", textDecoration:"underline"}} onClick={() => setIsUnderline((prev) => !prev)} color={isUnderline ? "blue" : "gray"} className='hover:cursor-pointer'>Line</Button>
+            <Button style={{ backgroundColor: "#808080", padding: "6px", borderRadius: "7px", fontWeight: "700" }} onClick={() => setIsBold((prev) => !prev)} color={isBold ? "blue" : "gray"} className='hover:cursor-pointer'>Bold</Button>
+            <Button style={{ backgroundColor: "#808080", padding: "6px", borderRadius: "7px", textDecoration: "underline" }} onClick={() => setIsUnderline((prev) => !prev)} color={isUnderline ? "blue" : "gray"} className='hover:cursor-pointer'>Line</Button>
           </Group>
           <Group mt="md" style={{ display: "flex", gap: "5px", width: "100%", justifyContent: "center" }}>
             <Text mt="md">FG</Text>
